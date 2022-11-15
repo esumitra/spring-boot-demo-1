@@ -9,6 +9,19 @@ This is a simple sprint boot application for the backend interview project. The 
 The project provides an HATEAOS implementation for a People lookup service.
 The project is the same as the guide at https://spring.io/guides/gs/accessing-data-rest/
 ## Build and Run
+The project can be built and run from either the command line or in IntelliJ
+
+### Command Line
+1. Steps to build the project
+
+`./mvnw compile`
+
+2. Steps to run the project
+
+`./mvnw spring-boot:run`
+
+
+### IntelliJ
 Steps to build the project
 1. Import the project into IntelliJ selecting the defaults (Maven project)
 2. Build the project in IntelliJ
@@ -55,3 +68,7 @@ The JDBC URL can be retrieved from the logs. Review the app startup logs for a l
 2022-07-29 08:19:39.369  INFO 32659 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:7020c287-ff87-47c6-ac88-0b497938691b'
 ```
 In the log example above, the JDBC URL is `jdbc:h2:mem:7020c287-ff87-47c6-ac88-0b497938691b`
+
+Connect with the URL above to access the h2 console
+
+![H2 Console](./h2-console.png)
